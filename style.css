@@ -1,0 +1,148 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --RoseWhite: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --LightGrey: hsl(30, 18%, 87%);
+  --WengeBrown: hsl(30, 10%, 34%);
+  --DarkCharcoal: hsl(24, 5%, 18%);
+  --Nutmeg: hsl(14, 45%, 36%);
+  --DarkRaspberry: hsl(332, 51%, 32%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* list-style-type: none; */
+  text-decoration: none;
+  font-family: "Young Serif", serif;
+  color: var(--DarkCharcoal);
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--Eggshell);
+}
+
+.container {
+  background-color: var(--White);
+  width: 45rem;
+  margin: 6rem auto;
+  border-radius: 1rem;
+
+  padding: 2.3rem;
+}
+.title-image {
+  width: 100%;
+  height: 18rem;
+  border-radius: 1rem;
+}
+.header-title {
+  font-size: 2rem;
+  font-family: "Young Serif", serif;
+  letter-spacing: 2px;
+  /* font-weight: 400; */
+  margin: 1rem 0;
+  color: var(--DarkCharcoal);
+}
+.header-text {
+  color: var(--DarkCharcoal);
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+}
+.box {
+  background-color: var(--RoseWhite);
+  margin: 2rem 0;
+  padding: 1.5rem 2.5rem;
+}
+.box-title {
+  font-size: 1.2rem;
+  /* margin: .9rem 0; */
+  /* line-height: 3rem; */
+  margin-right: 0.4rem;
+  color: var(--DarkRaspberry);
+}
+.list {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+.dark-title {
+  font-weight: bold;
+}
+.list-item {
+  padding-left: 1rem;
+  line-height: 1.7rem;
+}
+
+.sub-heading {
+  color: var(--Nutmeg);
+  font-family: "Young Serif", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+hr {
+  margin: 2rem 0;
+}
+
+td,
+th {
+  border-bottom: 1px solid var(--LightGrey);
+  height: 2.5rem;
+  text-align: left;
+}
+
+table {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    margin: 0;
+    position: relative;
+    padding: 3rem;
+  }
+
+  .title-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25rem;
+  }
+  .header-title {
+    margin-top: 26rem;
+    font-size: 20vw;
+  }
+  .header-text {
+    font-size: 2rem;
+    line-height: 4rem;
+    text-align: left;
+  }
+  .list-item,
+  .dark-title,
+  .text {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+  .sub-heading {
+    font-size: 3.4rem;
+  }
+  .box-title {
+    font-size: 2.6rem;
+  }
+  .list {
+    padding-left: 0.5rem;
+  }
+  .list-item {
+    padding-left: 2rem;
+  }
+  td {
+    font-size: 2rem;
+  }
+  tr {
+    height: 5rem;
+  }
+}
